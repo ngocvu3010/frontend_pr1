@@ -1,1 +1,216 @@
+@import "./helpers/_variables.sass"
+@import "./helpers/_mixins.sass"
+@import "./helpers/_font.sass"
+
 @import "./components/_header.sass"
+@import "./components/_footer.sass"
+@import "./base/_common.sass"
+
+body
+  margin: 0
+
+.wrapper
+  width: 500px
+  height: 460px
+  margin-top: 100px
+  background-color: lightblue
+  overflow: hidden
+
+.img-flower
+  width: 600px
+  height: 300px
+  top: 0
+  left: 0
+  position: sticky
+
+.menu-dropdown
+  flex-wrap: wrap
+  list-style-type: none
+  display: flex
+  font: inherit
+  float: right
+  padding-top: 20px
+  font-weight: 600
+
+  li
+    margin-right: 16px
+
+.section-title
+  height: 400px
+  background-image: url("https://mobirise.com/extensions/organicamp/assets/images/background10.jpg")
+  position: relative
+  padding-top: 3rem
+  padding-bottom: 3rem
+  background-color: #eeeeee
+  background-size: cover
+  overflow: hidden
+  color: black
+  position: relative
+  display: -webkit-flex
+
+  .overlay
+    background-color: $lightWhite
+    opacity: 0.5
+    height: 400px
+    z-index: 0
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+    left: 0
+
+  .section-container
+    color: black
+    text-align: center
+    position: relative
+    padding-right: 15px
+    padding-left: 15px
+    width: 100%
+    margin-right: auto
+    margin-left: auto
+
+    h1
+      font-size: 2.5rem
+    p
+      letter-spacing: 0.5px
+
+.feature
+  height: 350px
+
+.feature-card
+  display: flex
+  height: 100%
+
+.feature__card--green-light
+  background-color: $greenLight
+
+.feature__card--green
+  background-color: $green
+
+.feature__card--orange
+  background-color: $orange
+
+.feature__card--pink
+  background-color: $pink
+
+.feature__image
+  padding-top: 20px
+  padding-bottom: 30px
+  text-align: center
+  font-size: 6rem
+  color: $white
+
+.feature__title
+  text-align: center
+  color: white
+
+
+.feature-category
+  background-color: $lightOrange
+  height: 500px
+  text-align: center
+
+.list-item
+  padding-left: 200px
+  margin-right: 50px
+  width: 25%
+
+.list-category-wrap
+  display: flex
+
+.category-title-2
+  font-family: $fontTitle
+  font-size: 2.75rem
+  font-weight: 600
+
+.category-title-1
+  padding-top: 20px
+  font-family: $fontSubTitle
+  font-size: 1.5rem
+  color: darkcyan
+
+.list-item-icon
+  padding: 1rem
+  border-radius: 50%
+  transition: all .3s
+  margin-bottom: 25px
+  border-radius: 100%
+  display: flex
+  background-color: $lightBlue
+  width: calc(5rem + 3.75rem)
+  height: calc(5rem + 3.75rem)
+  font-size: 3.75rem
+  transition: all .3s
+  color: $white
+  padding-left: 36px
+  padding-top: 25px
+  margin-left: 45px
+
+.feature-shop
+  text-align: center
+  height: 500px
+
+  .list-item-shop
+    display: flex
+    height: 400px
+
+    .first-item
+      margin-left: 200px
+
+    .list-item-feature-shop
+      width: 400px
+      height: 295px
+      margin-right: 150px
+      border-radius: 45px 0 45px 45px
+      background-color: aliceblue
+
+      img
+        width: 85px
+        height: 70px
+        border-radius: 50%
+        transition: all .3s
+
+
+      .feature-shop-content
+        font-family: $fontTitle
+        font-size: 0.875rem
+        text-align: center
+        letter-spacing: 0.5px
+        line-height: 1.7
+        font-style: italic
+        color: darkgrey
+
+      .feature-shop-name
+        margin-top: 20px
+        font-weight: 600
+
+
+.feature-form
+  margin-bottom: 50px
+
+  .form-container
+    display: flex
+    padding-left: 200px
+    padding-top: 55px
+
+    .form-item
+      margin-right: 100px
+      display: relative
+
+      .address
+        display: flex
+        margin-top: 50px
+
+        .address-1
+          width: 50%
+
+      form
+        margin-top: 50px
+
+        input
+          @include input-form
+          height: 45px
+
+        textarea
+          @include input-form
+          height: 90px
