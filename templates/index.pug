@@ -1,3 +1,112 @@
 extend layouts/layout.pug
 block Main
-  .home day la home
+  section.section-title
+    .overlay
+    .section-container
+      h1.text-bold Vegan Store Simple Website Template
+      p With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal, the saturation of man with energy.
+
+  section.feature
+    .feature-card.row
+      .col-3.feature__card--green-light
+        .card-wrapper
+          .feature__image
+            span(class="mbr-iconfont fa fa-cut")
+          .feature__title Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.
+      .col-3.feature__card--green
+        .card-wrapper
+          .feature__image
+            span(class="mbr-iconfont fa fa-paint-brush")
+          .feature__title Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.
+      .col-3.feature__card--orange
+        .card-wrapper
+          .feature__image
+            span(class="mbr-iconfont fa fa-shopping-bag")
+          .feature__title Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.
+      .col-3.feature__card--pink
+        .card-wrapper
+          .feature__image
+            span(class="mbr-iconfont fa fa-smile-o")
+          .feature__title Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.
+  section.feature-category
+    p.category-title-1 Fresh Food
+    p.category-title-2 Our Vegan Store!
+    p.category-title-3 Radish contains a lot of fiber, pectin and mineral salts.
+
+    .list-category-wrap
+      .list-item
+        .list-item-icon
+          span
+            i(class='mbr-iconfont fa fa-camera')
+        .title Title
+        .list-item-content Use for cooking several types of vegetable oil.
+      .list-item
+        .list-item-icon
+          span
+            i(class="mbr-iconfont fa-rocket fa")
+        .title Title
+        .list-item-content Use for cooking several types of vegetable oil.
+      .list-item
+        .list-item-icon
+          span
+            i(class="mbr-iconfont fa-twitter fa")
+        .title Title
+        .list-item-content Use for cooking several types of vegetable oil.
+      .list-item
+        .list-item-icon
+          span
+            i(class="mbr-iconfont fa-twitter fa")
+        .title Title
+        .list-item-content Use for cooking several types of vegetable oil.
+  section.feature-shop
+    p.category-title-1 Fresh Food
+    p.category-title-2 Our Vegan Store!
+    p.category-title-3 Radish contains a lot of fiber, pectin and mineral salts.
+    .list-item-shop
+      .list-item-feature-shop.first-item
+        img.img-feature-shop(src="https://mobirise.com/extensions/organicamp/assets/images/face5.jpg")
+        .feature-shop-content Sales consultants are very polite. Many of the products have tried and are ready to prompt and recommend to customers. The staff shows that they completely share the philosophy of proper nutrition, if you can say so.
+        .feature-shop-name VERONICA KING
+        .shop-type.feature-shop-content Cook
+      .list-item-feature-shop
+        img.img-feature-shop(src="https://mobirise.com/extensions/organicamp/assets/images/face5.jpg")
+        .feature-shop-content Sales consultants are very polite. Many of the products have tried and are ready to prompt and recommend to customers. The staff shows that they completely share the philosophy of proper nutrition, if you can say so.
+        .feature-shop-name VERONICA KING
+        .shop-type.feature-shop-content Cook
+      .list-item-feature-shop
+        img.img-feature-shop(src="https://mobirise.com/extensions/organicamp/assets/images/face5.jpg")
+        .feature-shop-content Sales consultants are very polite. Many of the products have tried and are ready to prompt and recommend to customers. The staff shows that they completely share the philosophy of proper nutrition, if you can say so.
+        .feature-shop-name VERONICA KING
+        .shop-type.feature-shop-content Cook
+  section.feature-form
+    .form-container
+      .address-information.form-item
+        h4.sub-title Contact Us
+        h3.text-bold.display-1 Address Information
+        p.display-6 Overeating is one of the most common causes of overweight and digestive problems.
+        .address
+          .address-1
+            h3.text-bold London Store
+            .address-content
+              p.display-6 Roeterseiland Campus Building
+              p.display-6 16th floor London
+              p.display-6 Monday to Friday : 9am to 8pm
+              p.display-6 examplemail.mail.com
+          .address-1
+            h3.text-bold Berlin Store
+            .address-content
+              p.display-6 Roeterseiland Campus Building
+              p.display-6 16th floor London
+              p.display-6 Monday to Friday : 9am to 8pm
+              p.display-6 examplemail.mail.com
+      .form-touch.form-item
+        h4.sub-title Meet Our Team
+        h3.text-bold.display-1  Get In Touch
+        p.display-6 The task of proper nutrition - to remove from the diet harmful food and enrich it useful.
+        form
+          input(type="text" name="title" placeholder="Name")
+          input(type="text" name="title" placeholder="Phone")
+          input(type="text" name="title" placeholder="Subject")
+          input(type="text" name="title" placeholder="Email")
+          textarea(type="text" name="title" placeholder="Message")
+          button.btn.btn--state-green Submit now
